@@ -47,10 +47,8 @@ export KBUILD_COMPILER_STRING="$(${PWD}/clang/bin/clang --version | head -n 1 | 
 MAKE="./makeparallel"
 
 echo ""
-echo -e "$blue***********************************************"
-echo "**** Kernel defconfig is set to $KERNEL_DEFCONFIG ****"
-echo -e "***********************************************$nocol"
-echo "--------------------------------------------------------"
+echo -e "$blue Kernel defconfig is set to $KERNEL_DEFCONFIG$nocol"
+echo ""
 echo -e "$blue***********************************************"
 echo "            BUILDING KERNEL          "
 echo -e "***********************************************$nocol"
