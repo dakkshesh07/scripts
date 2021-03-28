@@ -38,8 +38,8 @@ read devicename
 
 KERNEL_DEFCONFIG=$defname
 Device=$devicename
-KERNELDIR=$PWD/
-export PATH="${PWD}/clang/bin:${PATH}"
+KERNELDIR=$PWD
+export PATH="${KERNELDIR}/clang/bin:${PATH}"
 export ARCH=arm64
 export SUBARCH=arm64
 export KBUILD_COMPILER_STRING="$(${PWD}/clang/bin/clang --version | head -n 1 | perl -pe 's/\(http.*?\)//gs' | sed -e 's/  */ /g' -e 's/[[:space:]]*$//')"
